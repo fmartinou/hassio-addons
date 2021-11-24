@@ -1,0 +1,39 @@
+---
+
+configuration:
+  TYDOM_MAC:
+    name: Adresse MAC du Tydom
+    description: Adresse MAC du Tydom (commence par 001A25...)
+  TYDOM_IP:
+    name: Adresse IP du Tydom
+    description: Adresse IP du Tydom (optionnel, mediation.tydom.com par défaut)
+  TYDOM_PASSWORD:
+    name: Mot de passe du Tydom
+    description: Mot de passe du Tydom
+  TYDOM_ALARM_PIN:
+    name: Code de l'alarme du Tydom
+    description: Code de l'alarme du Tydom (optionnel)
+  TYDOM_ALARM_HOME_ZONE:
+    name: Zone maison pour l'alarme du Tydom
+    description: Zone maison pour l'alarme du Tydom (optionnel)
+  TYDOM_ALARM_NIGHT_ZONE:
+    name: Zone nuit pour l'alarme du Tydom
+    description: Zone nuit pour l'alarme du Tydom (optionnel)
+  MQTT_HOST:
+    name: Adresse du serveur MQTT
+    description: Adresse du serveur MQTT (optionnel, localhost par défaut)
+  MQTT_USER:
+    name: Nom d'utilisateur du serveur MQTT
+    description: Nom d'utilisateur du serveur MQTT (optionnel, uniquement si l'authentification est activée)
+  MQTT_PASSWORD:
+    name: Mot de passe su serveur MQTT
+    description: Mot de passe du serveur MQTT (optionnel, uniquement si l'authentification est activée)
+  MQTT_PORT:
+    name: Port du serveur MQTT
+    description: Port du serveur MQTT (optionnel, 1883 par défaut)
+  MQTT_SSL:
+    name: SSL activé sur le serveur MQTT ?
+    description: true si le SSL est activé sur le serveur MQTT (optionnel, par défaut false)
+  log_level:
+    name: Niveau de log
+    description: Niveau de log (optionnel, par défaut info)

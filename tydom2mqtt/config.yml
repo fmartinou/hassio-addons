@@ -1,0 +1,47 @@
+---
+
+########## GENERAL SETTINGS ######################################################################################################
+name: tydom2mqtt
+image: fmartinou/tydom2mqtt
+version: 2.0.0
+slug: tydom2mqtt
+description: Delta Dore Tydom integration
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+url: https://github.com/fmartinou/tydom2mqtt.git
+services:
+  - mqtt:need
+
+########## DEFAULT OPTIONS #######################################################################################################
+options:
+  TYDOM_MAC: 001A25XXXXXX
+  TYDOM_IP: 192.168.1.XXX
+  TYDOM_PASSWORD: TYDOM_PASSWORD
+  TYDOM_ALARM_PIN: 9999
+  TYDOM_ALARM_HOME_ZONE: 1
+  TYDOM_ALARM_NIGHT_ZONE: 2
+  MQTT_HOST: homeassistant
+  MQTT_USER: ''
+  MQTT_PASSWORD: ''
+  MQTT_PORT: 1883
+  MQTT_SSL: false
+  log_level: info
+
+########## OPTIONS SCHEMA ########################################################################################################
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+  TYDOM_MAC: match(^001A25.*$)
+  TYDOM_IP: str?
+  TYDOM_PASSWORD: password
+  TYDOM_ALARM_PIN: int?
+  TYDOM_ALARM_HOME_ZONE: int?
+  TYDOM_ALARM_NIGHT_ZONE: int?
+  MQTT_HOST: str?
+  MQTT_USER: str?
+  MQTT_PASSWORD: password?
+  MQTT_PORT: port?
+  MQTT_SSL: bool?

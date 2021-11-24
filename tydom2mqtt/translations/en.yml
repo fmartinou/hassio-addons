@@ -1,0 +1,39 @@
+---
+
+configuration:
+  TYDOM_MAC:
+    name: Tydom MAC address
+    description: Tydom MAC address (starting with 001A25...)
+  TYDOM_IP:
+    name: Tydom IP address
+    description: Tydom IP address (optional, mediation.tydom.com by default)
+  TYDOM_PASSWORD:
+    name: Tydom password
+    description: Tydom password
+  TYDOM_ALARM_PIN:
+    name: Tydom alarm pin
+    description: Tydom alarm pin (optional)
+  TYDOM_ALARM_HOME_ZONE:
+    name: Tydom alarm home zone
+    description: Tydom alarm home zone (optional)
+  TYDOM_ALARM_NIGHT_ZONE:
+    name: Tydom alarm night zone
+    description: Tydom night home zone (optional)
+  MQTT_HOST:
+    name: Mqtt host
+    description: Mqtt host (optional, localhost by default)
+  MQTT_USER:
+    name: Mqtt user name
+    description: Mqtt user name (optional, only when authentication is enabled)
+  MQTT_PASSWORD:
+    name: Mqtt password
+    description: Mqtt password (optional, only when authentication is enabled)
+  MQTT_PORT:
+    name: Mqtt port
+    description: Mqtt port (optional, 1883 by default)
+  MQTT_SSL:
+    name: Mqtt SSL enabled?
+    description: Is SSL enabled othe MQTT broker? (optional, by default false)
+  log_level:
+    name: Log level
+    description: Log level (optional, by default info)
