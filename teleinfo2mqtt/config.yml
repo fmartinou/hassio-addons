@@ -1,0 +1,43 @@
+---
+
+########## GENERAL SETTINGS ######################################################################################################
+name: teleinfo2mqtt
+image: fmartinou/teleinfo-mqtt
+version: develop
+slug: teleinfo2mqtt
+description: Serial to MQTT Teleinfo Bridge
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+url: https://github.com/fmartinou/teleinfo-mqtt.git
+services:
+  - mqtt:need
+udev: true
+uart: true
+environment:
+  HASSIO_ADDON: 'true'
+
+########## DEFAULT OPTIONS #######################################################################################################
+options:
+  EMIT_INTERVAL: 10
+  HASS_DISCOVERY_PREFIX: homeassistant
+  LOG_LEVEL: INFO
+  MQTT_BASE_TOPIC: teleinfo
+  MQTT_URL: mqtt://homeassistant:1883
+  MQTT_USER: ''
+  MQTT_PASSWORD: ''
+  SERIAL: /dev/ttyUSB0
+
+########## OPTIONS SCHEMA ########################################################################################################
+schema:
+  EMIT_INTERVAL: int(0,)
+  HASS_DISCOVERY_PREFIX: str
+  LOG_LEVEL: list(DEBUG|INFO|ERROR)
+  MQTT_BASE_TOPIC: str
+  MQTT_URL: str
+  MQTT_USER: str?
+  MQTT_PASSWORD: password?
+  SERIAL: str

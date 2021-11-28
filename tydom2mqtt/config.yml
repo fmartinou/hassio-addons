@@ -5,7 +5,7 @@ name: tydom2mqtt
 image: fmartinou/tydom2mqtt
 version: 2.0.0
 slug: tydom2mqtt
-description: Delta Dore Tydom integration
+description: Deltadore Tydom to MQTT Bridge
 arch:
   - armhf
   - armv7

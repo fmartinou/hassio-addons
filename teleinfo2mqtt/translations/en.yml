@@ -1,0 +1,34 @@
+---
+
+configuration:
+  EMIT_INTERVAL:
+    name: Interval in seconds between 2 MQTT emissions
+    description: Interval in seconds between 2 MQTT emissions (0 = All frames are sent, 10 by default)
+
+  HASS_DISCOVERY_PREFIX:
+    name: Topic prefix for Home-Assistant Discovery
+    description: Topic prefix for Home-Assistant Discovery (0 = All frames are sent)
+
+  LOG_LEVEL:
+    name: Log level (INFO, DEBUG, ERROR)
+    description: Log level (INFO, DEBUG, ERROR, INFO by default)
+
+  MQTT_BASE_TOPIC:
+    name: MQTT Base topic
+    description: MQTT Base topic (homeassistant by default)
+
+  MQTT_URL:
+    name: MQTT Broker connection URL
+    description: MQTT Broker connection URL (mqtt://homeassistant:1883 by default)
+
+  MQTT_USER:
+    name: MQTT user (optional)
+    description: MQTT user (only if authentication is enabled on the mqtt broker)
+
+  MQTT_PASSWORD:
+    name: MQTT password (optional)
+    description: MQTT password (only if authentication is enabled on the mqtt broker)
+
+  SERIAL:
+    name: Serial Port location
+    description: Serial Port location (/dev/ttyUSB0 by default)
