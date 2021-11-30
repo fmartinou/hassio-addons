@@ -26,7 +26,7 @@ options:
   HASS_DISCOVERY_PREFIX: homeassistant
   LOG_LEVEL: INFO
   MQTT_BASE_TOPIC: teleinfo
-  MQTT_URL: mqtt://homeassistant:1883
+  MQTT_URL: mqtt://core-mosquitto:1883
   MQTT_USER: ''
   MQTT_PASSWORD: ''
   SERIAL: /dev/ttyUSB0
