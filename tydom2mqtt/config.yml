@@ -37,7 +37,7 @@ schema:
   TYDOM_MAC: match(^001A25.*$)
   TYDOM_IP: str?
   TYDOM_PASSWORD: password
-  TYDOM_ALARM_PIN: int?
+  TYDOM_ALARM_PIN: str?
   TYDOM_ALARM_HOME_ZONE: int?
   TYDOM_ALARM_NIGHT_ZONE: int?
   MQTT_HOST: str?
