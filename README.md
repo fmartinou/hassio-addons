@@ -14,7 +14,7 @@ Fmartinou hass.io add-ons repository.
 
 #### 2. Click on the `Repositories` menu item
 
-#### 3. Add the [git http url](https://github.com/fmartinou/hassio-addons.git) of this repository
+#### 3. Add the git http url ([https://github.com/fmartinou/hassio-addons.git](https://github.com/fmartinou/hassio-addons.git))
 
 ### How to install an add-on?
 
