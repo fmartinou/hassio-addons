@@ -3,7 +3,7 @@
 ########## GENERAL SETTINGS ######################################################################################################
 name: teleinfo2mqtt
 image: fmartinou/teleinfo-mqtt
-version: 6.1.0
+version: 7.0.0
 slug: teleinfo2mqtt
 description: Serial to MQTT Teleinfo Bridge
 arch:
@@ -24,20 +24,22 @@ environment:
 options:
   EMIT_INTERVAL: 10
   HASS_DISCOVERY_PREFIX: homeassistant
-  LOG_LEVEL: INFO
+  LOG_LEVEL: info
   MQTT_BASE_TOPIC: teleinfo
   MQTT_URL: mqtt://core-mosquitto:1883
   MQTT_USER: ''
   MQTT_PASSWORD: ''
   SERIAL: /dev/ttyUSB0
+  TIC_MODE: history
 
 ########## OPTIONS SCHEMA ########################################################################################################
 schema:
   EMIT_INTERVAL: int(0,)
   HASS_DISCOVERY_PREFIX: str
-  LOG_LEVEL: list(DEBUG|INFO|ERROR)
+  LOG_LEVEL: list(debug|info|error)
   MQTT_BASE_TOPIC: str
   MQTT_URL: str
   MQTT_USER: str?
   MQTT_PASSWORD: password?
   SERIAL: str
+  TIC_MODE: list(history|standard)
