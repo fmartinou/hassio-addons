@@ -3,7 +3,7 @@
 ########## GENERAL SETTINGS ######################################################################################################
 name: teleinfo2mqtt
 image: fmartinou/teleinfo-mqtt
-version: 7.0.1
+version: 7.0.2
 slug: teleinfo2mqtt
 description: Serial to MQTT Teleinfo Bridge
 arch:
