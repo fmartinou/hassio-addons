@@ -4,7 +4,7 @@ Fmartinou hass.io add-ons repository.
 
 ![](https://github.com/fmartinou/tydom2mqtt/raw/master/docs/tydom2mqtt_logo_250.png)
 
-![](https://github.com/fmartinou/teleinfo-mqtt/raw/master/docs/teleinfo-mqtt-logo-250.png)
+![](https://github.com/fmartinou/teleinfo2mqtt/raw/master/docs/teleinfo2mqtt-logo-250.png)
 
 ## Getting started
 

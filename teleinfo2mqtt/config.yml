@@ -2,8 +2,8 @@
 
 ########## GENERAL SETTINGS ######################################################################################################
 name: teleinfo2mqtt
-image: fmartinou/teleinfo-mqtt
-version: 7.0.2
+image: fmartinou/teleinfo2mqtt
+version: 8.0.0
 slug: teleinfo2mqtt
 description: Serial to MQTT Teleinfo Bridge
 arch:
@@ -12,7 +12,7 @@ arch:
   - aarch64
   - amd64
   - i386
-url: https://github.com/fmartinou/teleinfo-mqtt.git
+url: https://github.com/fmartinou/teleinfo2mqtt.git
 services:
   - mqtt:need
 udev: true

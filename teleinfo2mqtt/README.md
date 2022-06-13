@@ -1,8 +1,8 @@
 # teleinfo2mqtt add-on
 
-![](https://github.com/fmartinou/teleinfo-mqtt/raw/master/docs/teleinfo-mqtt-logo-250.png)
+![](https://github.com/fmartinou/teleinfo2mqtt/raw/master/docs/teleinfo2mqtt-logo-250.png)
 
-This add-on allows you to easily deploy and integrate [teleinfo2mqtt](https://fmartinou.github.io/teleinfo-mqtt/) to [Home-Assistant](https://www.home-assistant.io/).
+This add-on allows you to easily deploy and integrate [teleinfo2mqtt](https://fmartinou.github.io/teleinfo2mqtt/) to [Home-Assistant](https://www.home-assistant.io/).
 
 ## How to install the add-on?
 
