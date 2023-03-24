@@ -3,7 +3,7 @@
 ########## GENERAL SETTINGS ######################################################################################################
 name: tydom2mqtt
 image: fmartinou/tydom2mqtt
-version: 2.6.6
+version: 3.0.0
 slug: tydom2mqtt
 description: Deltadore Tydom to MQTT Bridge
 arch:
@@ -28,11 +28,11 @@ options:
   MQTT_PASSWORD: ''
   MQTT_PORT: 1883
   MQTT_SSL: false
-  log_level: info
+  LOG_LEVEL: INFO
 
 ########## OPTIONS SCHEMA ########################################################################################################
 schema:
-  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+  LOG_LEVEL: list(DEBUG|INFO|WARNING|ERROR)?
   TYDOM_MAC: match(^001A25.*$)
   TYDOM_IP: str?
   TYDOM_PASSWORD: password
