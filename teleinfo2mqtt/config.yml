@@ -3,7 +3,7 @@
 ########## GENERAL SETTINGS ######################################################################################################
 name: teleinfo2mqtt
 image: fmartinou/teleinfo2mqtt
-version: 8.3.3
+version: 9.0.0
 slug: teleinfo2mqtt
 description: Serial to MQTT Teleinfo Bridge
 arch:
@@ -31,6 +31,7 @@ options:
   MQTT_PASSWORD: ''
   SERIAL: /dev/ttyUSB0
   TIC_MODE: history
+  TEMPO_ENABLED: false
 
 ########## OPTIONS SCHEMA ########################################################################################################
 schema:
@@ -43,3 +44,4 @@ schema:
   MQTT_PASSWORD: password?
   SERIAL: str
   TIC_MODE: list(history|standard)
+  TEMPO_ENABLED: bool
