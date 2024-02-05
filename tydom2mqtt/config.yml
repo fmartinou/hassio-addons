@@ -3,7 +3,7 @@
 ########## GENERAL SETTINGS ######################################################################################################
 name: tydom2mqtt
 image: fmartinou/tydom2mqtt
-version: 3.4.2
+version: 3.4.3
 slug: tydom2mqtt
 description: Deltadore Tydom to MQTT Bridge
 arch:
@@ -23,6 +23,7 @@ options:
   TYDOM_PASSWORD: TYDOM_PASSWORD
   TYDOM_ALARM_HOME_ZONE: 1
   TYDOM_ALARM_NIGHT_ZONE: 2
+  TYDOM_POLLING_INTERVAL: 300
   MQTT_HOST: homeassistant
   MQTT_USER: ''
   MQTT_PASSWORD: ''
@@ -39,6 +40,7 @@ schema:
   TYDOM_ALARM_PIN: str?
   TYDOM_ALARM_HOME_ZONE: int?
   TYDOM_ALARM_NIGHT_ZONE: int?
+  TYDOM_POLLING_INTERVAL: int?
   MQTT_HOST: str?
   MQTT_USER: str?
   MQTT_PASSWORD: password?
