@@ -3,7 +3,7 @@
 ########## GENERAL SETTINGS ######################################################################################################
 name: tydom2mqtt
 image: fmartinou/tydom2mqtt
-version: 3.5.0
+version: 3.5.1
 slug: tydom2mqtt
 description: Deltadore Tydom to MQTT Bridge
 arch:
@@ -29,6 +29,8 @@ options:
   MQTT_PASSWORD: ''
   MQTT_PORT: 1883
   MQTT_SSL: false
+  THERMOSTAT_COOL_MODE_TEMP_DEFAULT: 26
+  THERMOSTAT_HEAT_MODE_TEMP_DEFAULT: 16
   LOG_LEVEL: INFO
 
 ########## OPTIONS SCHEMA ########################################################################################################
@@ -46,5 +48,7 @@ schema:
   MQTT_PASSWORD: password?
   MQTT_PORT: port?
   MQTT_SSL: bool?
+  THERMOSTAT_COOL_MODE_TEMP_DEFAULT: int?
+  THERMOSTAT_HEAT_MODE_TEMP_DEFAULT: int?  
   DELTADORE_LOGIN: str?
   DELTADORE_PASSWORD: password?
