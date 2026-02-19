@@ -2,8 +2,8 @@
 
 ########## GENERAL SETTINGS ######################################################################################################
 name: tydom2mqtt
-image: fmartinou/tydom2mqtt
-version: 3.5.3
+image: ghcr.io/tydom2mqtt/tydom2mqtt
+version: 3.6.0
 slug: tydom2mqtt
 description: Deltadore Tydom to MQTT Bridge
 arch:
@@ -38,7 +38,7 @@ schema:
   LOG_LEVEL: list(DEBUG|INFO|WARNING|ERROR)?
   TYDOM_MAC: match(^001A25.*$)
   TYDOM_IP: str?
-  TYDOM_PASSWORD: password
+  TYDOM_PASSWORD: password?
   TYDOM_ALARM_PIN: str?
   TYDOM_ALARM_HOME_ZONE: int?
   TYDOM_ALARM_NIGHT_ZONE: int?
